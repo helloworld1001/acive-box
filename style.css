@@ -26,8 +26,9 @@ p {
 
 .container {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 /*  Header
@@ -130,6 +131,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   transition: background-color .1s linear;
 }
 
@@ -139,6 +141,10 @@ p {
 
 .btn--red:hover {
     background-color: #dd3434;
+}
+
+.btn--long {
+  min-width: 280px;
 }
 
 /*Features
@@ -175,6 +181,9 @@ p {
   line-height: 1.5;
   color: #6c7279;
 }
+
+/*Works
+======================*/
 
 .works {
   display: flex;
@@ -214,8 +223,8 @@ p {
   transition: opacity .2s linear;
 }
 
-.works__content:hover {
-  opacity: 1;
+.works__item:hover .works__content {
+  opacity: 0.8;
 }
 
 .works__title {
@@ -229,4 +238,256 @@ p {
 .works__text {
   color: #ffffff;
   font-size: 14px;
+}
+
+/*Team
+======================*/
+
+.team {
+  margin: 100px 0 70px;
+}
+
+.team__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.team__item {
+  margin-bottom: 30px;
+  width: 25%;
+  padding: 0 15px;
+}
+
+.team__photo {
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.team__name {
+  margin-bottom: 8px;
+  font-size: 22px;
+  color: #2d3033;
+}
+
+.team__prof {
+  margin-bottom: 15px;
+  font-style: 13px;
+  color: #e84545;
+  text-transform: uppercase;
+}
+
+.team__text {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #6c7279;
+}
+
+/*Social
+======================*/
+
+.social {
+  display: flex;
+}
+
+.social--footer {
+  justify-content: center;
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 4px;
+  background-color: #fff;
+  border: 1px solid #e8ecee;
+  transition: background-color .1s linear;
+}
+
+.social__icon {
+  display: block;
+  fill: #c6cacc;
+  height: 20px;
+  transition: fill .1s linear;
+}
+
+.social__item:hover {
+  background-color: #e8ecee;
+}
+
+.social__item:hover .social__icon {
+  fill: #000;
+}
+
+.social--footer .social__item {
+  background-color: transparent;
+  border-width: 2px;
+  border-color: #fff;
+  border-radius: 2px;
+}
+
+.social--footer .social__icon {
+  fill: #fff;
+}
+
+.social--footer .social__item:hover {
+  background-color: #fff;
+}
+
+/*Rewiews
+======================*/
+
+.reviews {
+  background-color: #53354a;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.reviews__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reviews__photo {
+  width: 50%;
+  height: 500px;
+  position: relative;
+}
+
+.reviewes__img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.rewiews__content {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  padding-left: 80px;
+  width: 50%;
+}
+
+.reviews__text {
+  margin-bottom: 25px;
+  font-family: 'Cardo', 'sans-serif';
+  font-style: italic;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.reviews__author {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/*Download
+======================*/
+
+.download {
+  margin: 90px 0;
+  text-align: center;
+}
+
+.download__title {
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #2d3033;
+  font-weight: 300;
+}
+
+.download__subtitle {
+  margin-bottom: 30px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #2d3033;
+  text-transform: uppercase;
+}
+
+.download-btn {
+  padding: 19px 83px;
+}
+
+/*Footer
+======================*/
+
+.footer {
+  
+  background-color:  #3a3e64;
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+  padding: 70px 0;
+}
+
+.footer__block {
+  width: 33.33333%;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.footer__title{
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer__address {
+  font-size: 14px;
+  line-height: 1.5;
+  font-style: normal;
+  color: rgba(255, 255, 255, .5);
+}
+
+.footer__text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, .5);
+  line-height: 1.5;
+}
+
+.footer__block-social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__block-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer__block-social-img {
+  color: #ffffff;
+}
+
+.copyright {
+  padding: 20px 0;
+  background-color: #313454;
+}
+
+.coptyright__text {
+  text-align: center;
+  font-size: 14px;
+  color: #808080;
+  line-height: 1.5;
+}
+
+.coptyright__text span {
+  color: #fff;
 }
